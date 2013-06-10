@@ -1,0 +1,21 @@
+From: =?UTF-8?q?Carl=20F=C3=BCrstenberg?= <azatoth@gmail.com>
+Date: Tue, 11 Jun 2013 01:45:10 +0200
+Subject: do not include jar files in the jar
+
+---
+ build.xml |    2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/build.xml b/build.xml
+index f9886a8..6815189 100644
+--- a/build.xml
++++ b/build.xml
+@@ -113,8 +113,6 @@
+           description="build buck.jar"
+           >
+     <jar destfile="${build.dir}/buck.jar" update="true">
+-      <zipfileset refid="buck.jars" />
+-      <zipfileset refid="third-party.jars" />
+       <fileset dir="${src.dir}"
+                excludes="**/*.java, **/BUCK"
+                />

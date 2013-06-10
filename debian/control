@@ -1,0 +1,13 @@
+Source: buck
+Section: utils
+Priority: extra
+Maintainer: Carl Fürstenberg <azatoth@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+
+Package: buck
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Build system for Android
+ encourages the creation of small, reusable modules
+ consisting of code and resources.
